@@ -1,0 +1,11 @@
+@media screen and (max-height: 1080px){
+    html {
+        font-size: 25px;
+    }
+}
+
+@media (min-height: 1081px) {
+    html {
+        font-size: 25px;
+    }
+}
