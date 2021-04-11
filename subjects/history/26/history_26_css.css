@@ -80,7 +80,7 @@
     }
     .bun {
         padding: 0.5rem 1rem;
-        font-size: 1.25rem;
+        font-size: 1rem;
         border-radius: 0.3rem;
     }
     .text-for {
@@ -89,9 +89,6 @@
 }
 
 @media (min-height: 1081px) {
-    .main {
-        font-size: 75%;
-    }
     .wrapper-main {
         position: relative;
         display: flex;
