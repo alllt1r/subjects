@@ -1,3 +1,38 @@
+.link-instagram{
+    color: #6c757d;
+}
+.link-instagram:hover{
+    font-size: 105%;
+    color: #DB7BDB;
+}
+.link-youtube{
+    color: #6c757d;
+}
+.link-youtube:hover{
+    font-size: 105%;
+    color: red;
+}
+.link-facebook{
+    color: #6c757d;
+}
+.link-facebook:hover{
+    font-size: 105%;
+    color: #5F08FA;
+}
+.link-vk{
+    color: #6c757d;
+}
+.link-vk:hover{
+    font-size: 105%;
+    color: #011AFA;
+}
+.link-pinterest{
+    color: #6c757d;
+}
+.link-pinterest:hover{
+    font-size: 105%;
+    color: red;
+}
 @media screen and (max-height: 1080px){
     .wrapper-main {
         position: relative;
