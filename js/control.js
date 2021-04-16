@@ -24,7 +24,8 @@ var arrLang = {
 };
 $(function() {
     var lang = getLanguage()
-    if (lang == '') {
+    console.log(lang)
+    if (lang != 'en' && lang != 'ru') {
         lang = 'en'
     };
     $('.lang').each(function(index, item) {
