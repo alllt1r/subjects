@@ -1,5 +1,6 @@
 .link-instagram{
     color: #6c757d;
+    transition: 0.5s;
 }
 .link-instagram:hover{
     font-size: 105%;
@@ -7,6 +8,7 @@
 }
 .link-youtube{
     color: #6c757d;
+    transition: 0.5s;
 }
 .link-youtube:hover{
     font-size: 105%;
@@ -14,6 +16,7 @@
 }
 .link-facebook{
     color: #6c757d;
+    transition: 0.5s;
 }
 .link-facebook:hover{
     font-size: 105%;
@@ -21,6 +24,7 @@
 }
 .link-vk{
     color: #6c757d;
+    transition: 0.5s;
 }
 .link-vk:hover{
     font-size: 105%;
@@ -28,10 +32,76 @@
 }
 .link-pinterest{
     color: #6c757d;
+    transition: 0.5s;
 }
 .link-pinterest:hover{
     font-size: 105%;
     color: red;
+}
+.body1
+{
+    background-color: #fff;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22.6px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 17.3px;
+    width: 17.3px;
+    left: 2.6px;
+    bottom: 2.6px;
+    background-color: white;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(17.3px);
+    -ms-transform: translateX(17.3px);
+    transform: translateX(17.3px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 22.6px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
 @media screen and (max-height: 1080px){
     .wrapper-main {
@@ -121,6 +191,9 @@
     .text-for {
         font-size: 17px;
     }
+    .text-par {
+        color: black;
+    }
 }
 
 @media (min-height: 1081px) {
@@ -209,6 +282,9 @@
         border-radius: 0.3rem;
     }
     .text-for {
-        font-size: 5px;
+        font-size: 4px;
+    }
+    .text-par {
+        color: black;
     }
 }
