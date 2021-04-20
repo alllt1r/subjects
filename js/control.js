@@ -30,6 +30,8 @@ let darkThemeMain = "main_dark.css";
 let lightThemeSubjects = "../../../subjects/subject_page_light.css";
 let darkThemeSubjects = "../../../subjects/subject_page_dark.css";
 
+
+
 getTheme();
 function ChangeTheme()
 {
