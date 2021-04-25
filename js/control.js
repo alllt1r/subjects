@@ -23,21 +23,44 @@ var arrLang = {
     }
 };
 //var btn = jQuery(".theme-button");
+
 var btn = document.getElementById("theme-button");
 var link = document.getElementById("theme-link");
+
 let lightThemeMain = "main_light.css";
 let darkThemeMain = "main_dark.css";
-let lightThemeSubjects = "../../../subjects/subject_page_light.css";
-let darkThemeSubjects = "../../../subjects/subject_page_dark.css";
-
-
+let lightThemeSubjects = "../../../subject_page_light.css";
+let darkThemeSubjects = "../../../subject_page_dark.css";
 
 getTheme();
+function setDarkDropdown()
+{
+    $(function() {
+        dropdown = document.getElementsByClassName("dropdown-menu");
+        for (let i = 0; i < dropdown.length; i++) {
+            dropdown.item(i).classList.remove('dropdown-menu-dark');
+            dropdown.item(i).classList.add('dropdown-menu');
+            dropdown.item(i).classList.add('dropdown-menu-dark');
+        };
+    });
+};
+function setLightDropdown()
+{
+    $(function() {
+        dropdown = document.getElementsByClassName("dropdown-menu");
+        for (let i = 0; i < dropdown.length; i++) {
+            dropdown.item(i).classList.remove('dropdown-menu-dark');
+            dropdown.item(i).classList.add('dropdown-menu');
+        };
+    });
+};
+
 function ChangeTheme()
 {
 
     myStorage = window.localStorage;
     var currTheme = link.getAttribute("href");
+
     if(currTheme == lightThemeMain)
     {
         currTheme = darkThemeMain;
@@ -58,7 +81,12 @@ function ChangeTheme()
         currTheme = lightThemeSubjects;
         localStorage.setItem('Theme', 'light');
     };
-    console.log(localStorage.getItem('Theme'));
+    if (localStorage.getItem('Theme') == 'light') {
+        setLightDropdown();
+    }
+    else if (localStorage.getItem('Theme') == 'dark') {
+        setDarkDropdown();
+    };
     link.setAttribute("href", currTheme);
 };
 
@@ -67,7 +95,6 @@ function getTheme()
     var currTheme = link.getAttribute("href");
     myStorage = window.localStorage;
     var theme = localStorage.getItem('Theme');
-    console.log(theme);
     if (theme == 'dark') {
         if (currTheme == lightThemeMain)
         {
@@ -86,8 +113,18 @@ function getTheme()
             localStorage.setItem('Theme', 'dark');
         };
     };
+
+    if (localStorage.getItem('Theme') == 'light') {
+        setLightDropdown();
+    }
+    else if (localStorage.getItem('Theme') == 'dark') {
+        setDarkDropdown();
+    };
+
+
     link.setAttribute("href", currTheme);
 };
+
 
 /*
 $(function() {
@@ -124,6 +161,10 @@ function getLanguage() {
     var lang = localStorage.getItem('Language');
     return lang;
 }*/
+
+
+
+
 
 
 
