@@ -3,7 +3,6 @@
     transition: 0.5s;
 }
 .link-instagram:hover{
-    font-size: 105%;
     color: #B470FF;
 }
 .link-youtube{
@@ -11,7 +10,6 @@
     transition: 0.5s;
 }
 .link-youtube:hover{
-    font-size: 105%;
     color: red;
 }
 .link-facebook{
@@ -19,7 +17,6 @@
     transition: 0.5s;
 }
 .link-facebook:hover{
-    font-size: 105%;
     color: #5F08FA;
 }
 .link-vk{
@@ -27,7 +24,6 @@
     transition: 0.5s;
 }
 .link-vk:hover{
-    font-size: 105%;
     color: #011AFA;
 }
 .link-pinterest{
@@ -35,7 +31,6 @@
     transition: 0.5s;
 }
 .link-pinterest:hover{
-    font-size: 105%;
     color: red;
 }
 .body1
